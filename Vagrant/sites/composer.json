@@ -1,0 +1,19 @@
+{
+    "name": "root/api_rest",
+    "description": "API REST",
+    "type": "php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antoine07",
+            "email": "antoine.lucsko@wanadoo.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}
