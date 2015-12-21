@@ -1,19 +1,31 @@
 <?php
 
 /* ------------------------------------------------- *\
-    Ex Lamp Button
+    Ex Lamp, Video Button
 \* ------------------------------------------------- */
 
 require_once './Lamp.php';
 require_once './Button.php';
+require_once './Video.php';
 
-$lamp = new Button(new Lamp);
+$lamp= new Button(new Lamp);
 
 echo $lamp->switchDevice(); // turn on
-var_dump($lamp);
 echo $lamp->switchDevice(); // turn off
-var_dump($lamp);
 echo $lamp->switchDevice(); // turn on
-var_dump($lamp);
 echo $lamp->switchDevice(); // turn off
-var_dump($lamp);
+
+// video
+
+var_dump("------ video -----------");
+
+$video = new Button(new Video);
+
+var_dump($video);
+
+var_dump($video->switchDevice());
+var_dump($video->switchDevice());
+var_dump($video->switchDevice());
+var_dump($video->switchDevice());
+var_dump($video->switchDevice());
+var_dump($video->switchDevice());

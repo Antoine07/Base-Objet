@@ -10,20 +10,19 @@ class Button  {
     /**
      * @var Switchable
      */
-    private $device=null;
+    private $device;
 
-    public function __construct(Lamp $device){
+    public function __construct($device){
         $this->device=$device;
     }
 
-    /**
-     *
-     */
     public function switchDevice() {
         if ($this->state=='off') {
-            $this->state = $this->device->turnOn();
+            $this->state = 'on';
+            return $this->device->turnOn();
         } else {
-            $this->state = $this->device->turnOff();
+            $this->state = 'off';
+            return $this->device->turnOff();
         }
     }
 }
